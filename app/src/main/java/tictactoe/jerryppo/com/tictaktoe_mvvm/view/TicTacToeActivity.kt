@@ -14,7 +14,6 @@ class TicTacToeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       // setContentView(R.layout.tictactoe)
         val tictactoeBinding = DataBindingUtil.setContentView<TictactoeBinding>(this, R.layout.tictactoe)
         tictactoeBinding.viewModel = ticTacToeViewModel
         ticTacToeViewModel.onCreate()

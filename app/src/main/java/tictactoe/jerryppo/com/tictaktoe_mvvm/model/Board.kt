@@ -30,9 +30,7 @@ class Board {
     }
 
     fun mark(row: Int, col: Int) {
-        if (isValid(row, col)) {
             cells[row][col].value = currentTurn
-        }
 
         if (isWinningMoveByPlayer(currentTurn, row, col)) {
             state = GameState.FINISHED
@@ -52,7 +50,7 @@ class Board {
         }
     }
 
-    private fun isValid(row: Int, col: Int): Boolean {
+    fun isValid(row: Int, col: Int): Boolean {
         if (state == GameState.FINISHED) {
             return false
         }

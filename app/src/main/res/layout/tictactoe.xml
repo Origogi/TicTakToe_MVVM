@@ -40,6 +40,7 @@
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
                     android:textSize="@dimen/button_text_size"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
                     android:onClick="@{()-> viewModel.onClickedCellAt(0,0)}"
                     android:text='@{viewModel.cells["00"]}'
 
@@ -47,6 +48,7 @@
             <Button
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
                     android:onClick="@{()-> viewModel.onClickedCellAt(0,1)}"
                     android:text='@{viewModel.cells["01"]}'
                     android:textSize="@dimen/button_text_size"
@@ -56,6 +58,7 @@
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
                     android:textSize="@dimen/button_text_size"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
                     android:onClick="@{()-> viewModel.onClickedCellAt(0,2)}"
                     android:text='@{viewModel.cells["02"]}'
 
@@ -64,6 +67,7 @@
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
                     android:textSize="@dimen/button_text_size"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
                     android:onClick="@{()-> viewModel.onClickedCellAt(1,0)}"
                     android:text='@{viewModel.cells["10"]}'
 
@@ -72,6 +76,7 @@
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
                     android:textSize="@dimen/button_text_size"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
                     android:onClick="@{()-> viewModel.onClickedCellAt(1,1)}"
                     android:text='@{viewModel.cells["11"]}'
 
@@ -80,6 +85,8 @@
                     android:textSize="@dimen/button_text_size"
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
+
                     android:onClick="@{()-> viewModel.onClickedCellAt(1,2)}"
                     android:text='@{viewModel.cells["12"]}'
             />
@@ -87,6 +94,8 @@
                     android:textSize="@dimen/button_text_size"
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
+
                     android:onClick="@{()-> viewModel.onClickedCellAt(2,0)}"
                     android:text='@{viewModel.cells["20"]}'
             />
@@ -94,6 +103,8 @@
                     android:textSize="@dimen/button_text_size"
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
+
                     android:onClick="@{()-> viewModel.onClickedCellAt(2,1)}"
                     android:text='@{viewModel.cells["21"]}'
             />
@@ -101,6 +112,8 @@
                     android:textSize="@dimen/button_text_size"
                     android:layout_height="@dimen/button_height"
                     android:layout_width="@dimen/button_width"
+                    android:enabled="@{viewModel.winner.isEmpty()}"
+
                     android:onClick="@{()-> viewModel.onClickedCellAt(2,2)}"
                     android:text='@{viewModel.cells["22"]}'
             />
